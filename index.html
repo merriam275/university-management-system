@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Global Science University - University Management System">
+  <title>GSU | University Management System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <input class="view-toggle" type="radio" name="view" id="admin-view" checked>
+  <input class="view-toggle" type="radio" name="view" id="student-view">
+  <input class="view-toggle" type="radio" name="view" id="teacher-view">
+
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#overview">
+        <img src="assets/gsu-logo.png" alt="Global Science University logo">
+        <span><strong>GSU</strong><small>GLOBAL SCIENCE UNIVERSITY</small></span>
+      </a>
+
+      <div class="campus-label">UNIVERSITY PORTAL</div>
+      <div class="role-switch">
+        <label for="admin-view">Admin</label>
+        <label for="student-view">Student</label>
+        <label for="teacher-view">Teacher</label>
+      </div>
+
+      <nav class="side-nav admin-menu">
+        <span class="nav-caption">MAIN MENU</span>
+        <a class="nav-link active" href="#overview"><span class="nav-icon">▦</span> Overview</a>
+        <a class="nav-link" href="#students"><span class="nav-icon">♙</span> Students <b class="nav-count">415</b></a>
+        <a class="nav-link" href="#teachers"><span class="nav-icon">♧</span> Teachers & Staff</a>
+        <a class="nav-link" href="#admissions"><span class="nav-icon">＋</span> Admissions</a>
+        <a class="nav-link" href="#attendance"><span class="nav-icon">◷</span> Attendance</a>
+        <a class="nav-link" href="#exams"><span class="nav-icon">▤</span> Exams & Results</a>
+        <a class="nav-link" href="#fees"><span class="nav-icon">＄</span> Fees & Finance</a>
+        <a class="nav-link" href="#academics"><span class="nav-icon">▣</span> Faculties & Courses</a>
+        <a class="nav-link" href="#timetable"><span class="nav-icon">▦</span> Timetable</a>
+        <a class="nav-link" href="#reports"><span class="nav-icon">▥</span> Reports</a>
+        <span class="nav-caption lower">SYSTEM</span>
+        <a class="nav-link" href="#settings"><span class="nav-icon">⚙</span> Settings</a>
+      </nav>
+
+      <nav class="side-nav student-menu">
+        <span class="nav-caption">STUDENT SPACE</span>
+        <a class="nav-link active" href="#student-home"><span class="nav-icon">▦</span> My Dashboard</a>
+        <a class="nav-link" href="#student-courses"><span class="nav-icon">▣</span> My Courses</a>
+        <a class="nav-link" href="#student-attendance"><span class="nav-icon">◷</span> My Attendance</a>
+        <a class="nav-link" href="#student-exams"><span class="nav-icon">▤</span> Exams & Results</a>
+        <a class="nav-link" href="#student-fees"><span class="nav-icon">＄</span> Fee Statement</a>
+        <a class="nav-link" href="#student-profile"><span class="nav-icon">♙</span> My Profile</a>
+      </nav>
+
+      <nav class="side-nav teacher-menu">
+        <span class="nav-caption">TEACHER SPACE</span>
+        <a class="nav-link active" href="#teacher-home"><span class="nav-icon">▦</span> Dashboard</a>
+        <a class="nav-link" href="#teacher-classes"><span class="nav-icon">♙</span> My Classes</a>
+        <a class="nav-link" href="#teacher-attendance"><span class="nav-icon">◷</span> Take Attendance</a>
+        <a class="nav-link" href="#teacher-exams"><span class="nav-icon">▤</span> Exams & Grading</a>
+        <a class="nav-link" href="#teacher-timetable"><span class="nav-icon">▦</span> My Timetable</a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="help-card">
+          <div class="help-symbol">✦</div>
+          <strong>Need assistance?</strong>
+          <p>Contact the university ICT support team.</p>
+          <a href="https://gsu.edu.so/" target="_blank" rel="noopener">Visit GSU website ↗</a>
+        </div>
+        <div class="sidebar-user">
+          <div class="avatar avatar-blue">AA</div>
+          <div><strong>GSU Administrator</strong><small>Super Admin</small></div>
+          <span class="more">•••</span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <div class="mobile-brand"><img src="assets/gsu-logo.png" alt=""> <strong>GSU Portal</strong></div>
+        <div class="breadcrumb">Global Science University <span>/</span> <strong class="admin-title">Dashboard</strong><strong class="student-title">Student Portal</strong><strong class="teacher-title">Teacher Portal</strong></div>
+        <div class="top-actions">
+          <span class="academic-year">Academic year <b>2026 / 2027</b></span>
+          <button class="icon-button" aria-label="Notifications">♧<i></i></button>
+          <div class="top-profile"><div class="avatar avatar-blue">AA</div><div><strong>Admin Account</strong><small>Administrator</small></div><span>⌄</span></div>
+        </div>
+      </header>
+
+      <div class="content">
+        <section class="welcome-row" id="overview">
+          <div>
+            <div class="eyebrow"><span class="live-dot"></span> UNIVERSITY MANAGEMENT SYSTEM</div>
+            <h1 class="admin-title">Good morning, Administrator <span>✦</span></h1>
+            <h1 class="student-title">Welcome back, Student <span>✦</span></h1>
+            <h1 class="teacher-title">Welcome back, Lecturer <span>✦</span></h1>
+            <p class="admin-title">Here’s what is happening across your university today.</p>
+            <p class="student-title">Your academic journey at Global Science University, all in one place.</p>
+            <p class="teacher-title">Manage your classes, attendance and student assessments.</p>
+          </div>
+          <div class="welcome-actions"><span class="date-chip">◷ &nbsp; Tuesday, 17 November 2026</span><a class="primary-btn" href="#admissions">＋ Register student</a></div>
+        </section>
+
+        <section class="stats-grid admin-only">
+          <article class="stat-card"><div class="stat-top"><span>Total Students</span><span class="stat-icon blue">♙</span></div><div class="stat-number">415</div><div class="stat-foot"><span class="trend">↗ 8.2%</span> <span>vs. last academic year</span></div><div class="stat-line blue-line"></div></article>
+          <article class="stat-card"><div class="stat-top"><span>Teaching Staff</span><span class="stat-icon violet">♧</span></div><div class="stat-number">60</div><div class="stat-foot"><span class="trend">↗ 4.5%</span> <span>active staff members</span></div><div class="stat-line violet-line"></div></article>
+          <article class="stat-card"><div class="stat-top"><span>Attendance Today</span><span class="stat-icon green">◷</span></div><div class="stat-number">92.4<span class="percent">%</span></div><div class="stat-foot"><span class="trend">↗ 2.1%</span> <span>university-wide</span></div><div class="stat-line green-line"></div></article>
+          <article class="stat-card"><div class="stat-top"><span>Fee Collection</span><span class="stat-icon orange">＄</span></div><div class="stat-number">$38,450</div><div class="stat-foot"><span class="trend">↗ 12.8%</span> <span>this semester</span></div><div class="stat-line orange-line"></div></article>
+        </section>
+
+        <section class="dashboard-grid admin-only">
+          <article class="panel enrollment-panel">
+            <div class="panel-heading"><div><h2>Enrollment overview</h2><p>Student enrollment across academic years</p></div><select aria-label="Enrollment period"><option>Last 6 months</option><option>This year</option></select></div>
+            <div class="chart-legend"><span><i class="legend-blue"></i> New students</span><span><i class="legend-light"></i> Returning students</span></div>
+            <div class="bar-chart">
+              <div class="y-labels"><span>160</span><span>120</span><span>80</span><span>40</span><span>0</span></div>
+              <div class="chart-area">
+                <div class="grid-lines"><i></i><i></i><i></i><i></i><i></i></div>
+                <div class="bar-group"><div class="bar-pair"><i style="height:42%"></i><b style="height:64%"></b></div><small>Jun</small></div>
+                <div class="bar-group"><div class="bar-pair"><i style="height:55%"></i><b style="height:72%"></b></div><small>Jul</small></div>
+                <div class="bar-group"><div class="bar-pair"><i style="height:48%"></i><b style="height:68%"></b></div><small>Aug</small></div>
+                <div class="bar-group"><div class="bar-pair"><i style="height:76%"></i><b style="height:88%"></b></div><small>Sep</small></div>
+                <div class="bar-group"><div class="bar-pair"><i style="height:62%"></i><b style="height:79%"></b></div><small>Oct</small></div>
+                <div class="bar-group"><div class="bar-pair"><i style="height:88%"></i><b style="height:95%"></b></div><small>Nov</small></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel faculty-panel" id="academics">
+            <div class="panel-heading"><div><h2>Students by faculty</h2><p>Current student distribution</p></div><a class="text-link" href="#reports">View report ↗</a></div>
+            <div class="faculty-visual"><div class="donut"><div><strong>415</strong><small>Students</small></div></div></div>
+            <div class="faculty-legend">
+              <div><i class="dot dot-blue"></i><span>Medicine & Surgery</span><b>103</b></div>
+              <div><i class="dot dot-violet"></i><span>Health Sciences</span><b>224</b></div>
+              <div><i class="dot dot-cyan"></i><span>Computer Science & IT</span><b>40</b></div>
+              <div><i class="dot dot-orange"></i><span>Social & Management</span><b>48*</b></div>
+            </div>
+            <small class="data-note">*Illustrative dashboard allocation; verify against the live student register.</small>
+          </article>
+        </section>
+
+        <section class="lower-grid admin-only">
+          <article class="panel table-panel" id="students">
+            <div class="panel-heading"><div><h2>Recently registered students</h2><p>Latest student registration activity</p></div><a class="text-link" href="#admissions">View all students ↗</a></div>
+            <div class="table-wrap"><table><thead><tr><th>STUDENT</th><th>STUDENT ID</th><th>FACULTY</th><th>YEAR</th><th>STATUS</th></tr></thead>
+              <tbody>
+                <tr><td><div class="person"><div class="avatar avatar-pink">FA</div><span><b>Fatima Ahmed</b><small>fatima@gsu.edu.so</small></span></div></td><td>GSU-2026-0142</td><td>Health Sciences</td><td>Year 1</td><td><span class="status active-status">Active</span></td></tr>
+                <tr><td><div class="person"><div class="avatar avatar-gold">MA</div><span><b>Mohamed Ali</b><small>mohamed@gsu.edu.so</small></span></div></td><td>GSU-2026-0141</td><td>Medicine</td><td>Year 1</td><td><span class="status active-status">Active</span></td></tr>
+                <tr><td><div class="person"><div class="avatar avatar-green">SH</div><span><b>Safiya Hassan</b><small>safiya@gsu.edu.so</small></span></div></td><td>GSU-2026-0140</td><td>Computer Science</td><td>Year 2</td><td><span class="status pending-status">Pending</span></td></tr>
+                <tr><td><div class="person"><div class="avatar avatar-lilac">OM</div><span><b>Omar Mohamed</b><small>omar@gsu.edu.so</small></span></div></td><td>GSU-2026-0139</td><td>Social & Management</td><td>Year 1</td><td><span class="status active-status">Active</span></td></tr>
+              </tbody></table></div>
+          </article>
+          <article class="panel events-panel">
+            <div class="panel-heading"><div><h2>Upcoming activities</h2><p>Academic calendar & reminders</p></div><a class="text-link" href="#timetable">See calendar</a></div>
+            <div class="event"><div class="event-date"><b>20</b><small>NOV</small></div><div><b>Mid-semester examinations</b><small>All faculties · Examination halls</small></div><span class="event-tag exam-tag">Exam</span></div>
+            <div class="event"><div class="event-date purple-date"><b>24</b><small>NOV</small></div><div><b>Faculty academic meeting</b><small>Deans & academic staff · 10:00 AM</small></div><span class="event-tag meeting-tag">Meeting</span></div>
+            <div class="event"><div class="event-date green-date"><b>28</b><small>NOV</small></div><div><b>New student orientation</b><small>Main campus · 9:00 AM</small></div><span class="event-tag event-tag-green">Event</span></div>
+          </article>
+        </section>
+
+        <section class="panel management-panel admin-only" id="admissions">
+          <div class="panel-heading"><div><h2>Quick management</h2><p>Common university administration tasks</p></div></div>
+          <div class="quick-grid">
+            <a href="#students"><span class="quick-icon q-blue">＋</span><b>New admission</b><small>Register a student</small></a>
+            <a href="#teachers"><span class="quick-icon q-purple">♧</span><b>Add teacher</b><small>Manage staff records</small></a>
+            <a href="#attendance"><span class="quick-icon q-green">◷</span><b>Attendance</b><small>View daily attendance</small></a>
+            <a href="#exams"><span class="quick-icon q-orange">▤</span><b>Exam results</b><small>Manage grades</small></a>
+            <a href="#fees"><span class="quick-icon q-pink">＄</span><b>Fee collection</b><small>Payments & invoices</small></a>
+            <a href="#reports"><span class="quick-icon q-cyan">▥</span><b>Reports</b><small>Academic performance</small></a>
+          </div>
+        </section>
+
+        <section class="portal-grid student-only" id="student-home">
+          <article class="panel student-hero">
+            <div class="student-hero-copy"><span class="eyebrow">MY ACADEMIC SPACE</span><h2>Your future starts with knowledge.</h2><p>Track your academic progress, stay up to date and make every semester count.</p><a href="#student-courses" class="primary-btn">Explore my courses →</a></div>
+            <div class="student-hero-mark">GSU<span>✦</span></div>
+          </article>
+          <div class="student-stats">
+            <article class="stat-card"><div class="stat-top">Attendance <span class="stat-icon green">◷</span></div><div class="stat-number">94<span class="percent">%</span></div><div class="stat-foot">This semester</div></article>
+            <article class="stat-card"><div class="stat-top">Current GPA <span class="stat-icon blue">✧</span></div><div class="stat-number">3.72</div><div class="stat-foot">Out of 4.00</div></article>
+            <article class="stat-card"><div class="stat-top">Registered courses <span class="stat-icon violet">▣</span></div><div class="stat-number">6</div><div class="stat-foot">Semester 1</div></article>
+          </div>
+          <article class="panel" id="student-courses"><div class="panel-heading"><div><h2>My courses</h2><p>Current semester course list</p></div><a class="text-link" href="#student-courses">Course details ↗</a></div><div class="course-list"><div><span class="course-code">MED 201</span><b>Human Anatomy</b><small>Dr. Academic Staff · 3 Credits</small></div><span class="status active-status">Enrolled</span></div><div class="course-list"><div><span class="course-code">MED 204</span><b>Physiology</b><small>Faculty of Medicine · 4 Credits</small></div><span class="status active-status">Enrolled</span></div><div class="course-list"><div><span class="course-code">MED 206</span><b>Medical Biochemistry</b><small>Faculty of Medicine · 3 Credits</small></div><span class="status active-status">Enrolled</span></div></article>
+          <article class="panel" id="student-exams"><div class="panel-heading"><div><h2>Exams & results</h2><p>Your assessment overview</p></div></div><div class="notice"><span>▤</span><div><b>Mid-semester examination</b><small>20 November 2026 · Check your official timetable.</small></div><span class="status pending-status">Upcoming</span></div><div class="notice"><span>✧</span><div><b>Results & transcripts</b><small>Published grades will appear here.</small></div><a class="text-link" href="#student-exams">View</a></div></article>
+        </section>
+
+        <section class="portal-grid teacher-only" id="teacher-home">
+          <div class="student-hero teacher-hero"><div class="student-hero-copy"><span class="eyebrow">FACULTY WORKSPACE</span><h2>Make an impact in every class.</h2><p>Access your teaching schedule, record attendance and manage student assessments.</p><a href="#teacher-classes" class="primary-btn">View my classes →</a></div><div class="student-hero-mark">GSU<span>✦</span></div></div>
+          <div class="student-stats"><article class="stat-card"><div class="stat-top">My classes <span class="stat-icon blue">▣</span></div><div class="stat-number">4</div><div class="stat-foot">This semester</div></article><article class="stat-card"><div class="stat-top">My students <span class="stat-icon violet">♙</span></div><div class="stat-number">126</div><div class="stat-foot">Across all classes</div></article><article class="stat-card"><div class="stat-top">Attendance submitted <span class="stat-icon green">◷</span></div><div class="stat-number">18</div><div class="stat-foot">This month</div></article></div>
+          <article class="panel" id="teacher-classes"><div class="panel-heading"><div><h2>Today's teaching schedule</h2><p>Tuesday · 17 November 2026</p></div></div><div class="event"><div class="event-date"><b>08</b><small>AM</small></div><div><b>Human Anatomy · MED 201</b><small>Year 2 · Lecture Hall A</small></div><span class="status active-status">Completed</span></div><div class="event"><div class="event-date purple-date"><b>10</b><small>AM</small></div><div><b>Clinical Skills · HSC 204</b><small>Year 3 · Skills Laboratory</small></div><span class="status pending-status">Upcoming</span></div></article>
+          <article class="panel" id="teacher-attendance"><div class="panel-heading"><div><h2>Teaching tools</h2><p>Common lecturer tasks</p></div></div><div class="quick-grid"><a href="#teacher-attendance"><span class="quick-icon q-green">◷</span><b>Take attendance</b><small>Record class presence</small></a><a href="#teacher-exams"><span class="quick-icon q-orange">▤</span><b>Enter grades</b><small>Submit exam marks</small></a><a href="#teacher-timetable"><span class="quick-icon q-purple">▦</span><b>My timetable</b><small>View teaching schedule</small></a></div></article>
+        </section>
+
+        <section class="admin-only extra-sections">
+          <article class="panel" id="teachers"><div class="panel-heading"><div><h2>Teacher management</h2><p>Staff directory and academic assignments</p></div><a class="primary-btn small-btn" href="#teachers">＋ Add teacher</a></div><p class="section-description">Manage lecturer profiles, faculty assignments, teaching loads, employment status and staff access permissions.</p></article>
+          <article class="panel" id="attendance"><div class="panel-heading"><div><h2>Attendance management</h2><p>Daily attendance by faculty, class and course</p></div><span class="status active-status">Live module preview</span></div><p class="section-description">Record student attendance, review absences, export class registers and notify students with repeated absences.</p></article>
+          <article class="panel" id="exams"><div class="panel-heading"><div><h2>Examinations & grading</h2><p>Exam schedules, marks and result publication</p></div><a class="primary-btn small-btn" href="#exams">＋ Create exam</a></div><p class="section-description">Configure examination sessions, assign invigilators, enter marks, calculate grades and publish approved results to student portals.</p></article>
+          <article class="panel" id="fees"><div class="panel-heading"><div><h2>Fees & finance</h2><p>Student invoices, receipts and balances</p></div><a class="primary-btn small-btn" href="#fees">＋ Record payment</a></div><p class="section-description">Manage tuition invoices, payment history, discounts, waivers, outstanding balances and printable receipts.</p></article>
+          <article class="panel" id="timetable"><div class="panel-heading"><div><h2>Academic timetable</h2><p>Classroom, lecturer and course scheduling</p></div></div><p class="section-description">Build weekly timetables, allocate rooms, avoid lecturer conflicts and publish schedules to student and teacher portals.</p></article>
+          <article class="panel" id="reports"><div class="panel-heading"><div><h2>University reports</h2><p>Academic and administrative insights</p></div></div><p class="section-description">Generate enrollment, attendance, examination, finance and faculty reports for authorized university management.</p></article>
+          <article class="panel" id="settings"><div class="panel-heading"><div><h2>System settings</h2><p>Institution profile and access management</p></div></div><p class="section-description">Configure academic years, semesters, departments, grading scales, user roles, permissions and portal preferences.</p></article>
+        </section>
+
+        <footer class="footer"><span>© 2026 Global Science University · Galkacyo, Puntland, Somalia</span><span>Knowledge · Innovation · Excellence <b>✦</b></span></footer>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
